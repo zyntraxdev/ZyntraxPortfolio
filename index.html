@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zyntrax | Developer Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="cursor-cube" id="cursorCube"></div>
+  <canvas id="bgCanvas"></canvas>
+
+  <!-- NAVBAR -->
+  <header>
+    <nav class="navbar">
+      <h1>Zyntrax</h1>
+      <ul>
+        <li><a href="#hero">Home</a></li>
+       <li><a href="#pastwork">Past Work</a></li>
+        <li><a href="#groups">Groups</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a href="#terms">Terms</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-content">
+      <h2>Hello, I’m <span class="accent">Zyntrax</span></h2>
+      <p>Web Dev | Game Dev | Roblox Dev</p>
+      <a href="#pastwork" class="btn">View My Work</a>
+
+
+      <!-- INFO SECTION -->
+      <section id="info" class="info-section">
+        <div class="info-container">
+          <div class="info-grid">
+            <div class="info-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <div>
+                <h4>Based In</h4>
+                <p>Södertälje, Sweden</p>
+              </div>
+            </div>
+            <div class="info-item">
+              <i class="fas fa-clock"></i>
+              <div>
+                <h4>My Current Time</h4>
+                <p id="localTime">--:--:--</p>
+              </div>
+            </div>
+            <div class="info-item">
+              <i class="fas fa-globe"></i>
+              <div>
+                <h4>Timezone</h4>
+                <p>Central European Time (UTC+01:00)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </section>
+
+  <div class="skills-badges">
+    <span>HTML</span>
+    <span>CSS</span>
+    <span>JavaScript</span>
+    <span>Lua</span>
+    <span>Building</span>
+    <span>Project Management</span>
+  </div>
+
+  <!-- ABOUT -->
+  <section id="about" class="centered-section">
+    <h2>About Me</h2>
+    <p>
+      I’m Zyntrax, a <strong>14-year-old developer</strong> with experience in <strong>web development, game design, and Roblox scripting</strong>. I’ve worked with HTML, CSS, JS, Lua, and I love building and managing projects from start to finish.
+    </p>
+  </section>
+
+  <!-- PROJECTS -->
+ <section id="pastwork">
+  <h2>Past Work</h2>
+
+    <div class="project-grid">
+      <div class="project-card">
+        <img src="myfirstgame.png.png" alt="Project 1" />
+        <h3>Mystery of obbys</h3>
+        <p> A obby game i made it..</p>
+        <div class="project-card">
+  <img src="first-game.png" alt="My First Game" />
+  <h3>obby Game</h3>
+  <p>A multi-stage Roblox obby with skip-stage mechanics and custom level design.</p>
+  <button class="btn" onclick="openProjectModal()">See past work</button>
+</div>
+
+<!-- PROJECT MODAL -->
+<div id="projectModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeProjectModal()">&times;</span>
+    <h2>My First Game</h2>
+    <img src="myfirstgame.png.png" alt="My First Game" style="width:100%; border-radius:10px; margin-bottom:1rem;" />
+    <p>This was one of the first games I created in Roblox Studio. It features multiple stages, a skip-stage mechanic, and custom level design using Lua scripting.</p>
+  </div>
+</div>
+
+      </div>
+      <div class="project-card">
+        <img src="image (1).webp" alt="Project 2" />
+        <h3>Builded sword shop</h3>
+        <p>A sword shop i did as a commison.</p>
+      </div>
+      <div class="project-card">
+        <img src="image.webp" alt="Project 3" />
+        <h3>Builded Dumpster for a long term commision</h3>
+        <p>Custom Roblox builds i have many but those are examples.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- GROUPS -->
+  <section id="groups">
+    <h2>Groups</h2>
+    <div class="info-grid">
+      <div class="info-card">
+        <h3>Synatech</h3>
+        <p>Collaborative scripting and UI design group.</p>
+      </div>
+      <div class="info-card">
+        <h3>EpicCore games</h3>
+        <p>Personal brand for immersive Roblox experiences.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- REVIEWS -->
+  <section id="reviews">
+    <h2>Reviews</h2>
+    <div class="info-grid">
+      <div class="info-card">
+        <h3>Client A</h3>
+        <img src="Screenshot 2025-10-27 093807.png" alt="Reviews"
+    <p> A Review from a old client</p>
+      </div>
+      <div class="info-card">
+        <h3>Studio Lead</h3>
+        <p>"Creative, fast, and always delivers polished work."</p>
+      </div>
+    </div>
+  </section>
+
+<!-- TERMS BUTTON -->
+<section id="terms" class="centered-section">
+  <h2>Terms</h2>
+  <div class="center-btn">
+    <button class="btn" onclick="openTermsModal()">View Full Terms</button>
+  </div>
+</section>
+
+
+
+
+  <!-- TERMS MODAL -->
+  <div id="termsModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeTermsModal()">&times;</span>
+      <h2>Terms of Service</h2>
+      <div class="terms-grid">
+        <div class="terms-card">
+          <h3>📦 Project Scope</h3>
+          <p>All work is scoped and agreed before development begins.</p>
+        </div>
+        <div class="terms-card">
+          <h3>💰 Payment</h3>
+          <p>50% upfront, 50% on delivery. PayPal or Robux accepted.</p>
+        </div>
+        <div class="terms-card">
+          <h3>🔁 Revisions</h3>
+          <p>Includes 2 rounds of revisions. Extra changes billed hourly.</p>
+        </div>
+        <div class="terms-card">
+          <h3>📅 Deadlines</h3>
+          <p>Deadlines are respected. If delays occur, updates will be communicated.</p>
+        </div>
+        <div class="terms-card">
+          <h3>📞 Communication</h3>
+          <p>Updates shared regularly. Feedback welcomed throughout the project.</p>
+        </div>
+        <div class="terms-card">
+          <h3>🚫 Cancellation</h3>
+          <p>Upfront payment is non-refundable if canceled mid-way.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CONTACT -->
+  <section id="contact" class="contact-section">
+    <h2>Contact</h2>
+    <div class="contact-box">
+      <p>Connect with me:</p>
+      <div class="contact-buttons">
+        <a href="mailto:zyntraxofficial@gmail.com" class="contact-btn">
+          <i class="fas fa-envelope"></i> Email
+        </a>
+        <a href="https://discord.com/channels/1411636014346407937/1411731422317908039" target="_blank" class="contact-btn">
+          <i class="fab fa-discord"></i> Discord
+        </a>
+        <a href="https://www.roblox.com/users/8167113939/profile?friendshipSourceType=PlayerSearch" target="_blank" class="contact-btn">
+          <i class="fas fa-gamepad"></i> Roblox
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; <span id="year"></span> Zyntrax. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
